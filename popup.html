@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pomodoro Timer</h1>
+      <!-- Timer Display -->
+      <div id="timer-display" class="timer">40:00</div>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button id="start-timer">Start</button>
+        <button id="pause-timer">Pause</button>
+        <button id="reset-timer">Reset</button>
+      </div>
+
+      <!-- Preset Templates -->
+      <div id="templates" class="settings">
+        <h2>Preset Templates</h2>
+        <button class="template-button" data-work="20" data-break="5">20 Work / 5 Break</button>
+        <button class="template-button" data-work="40" data-break="10">40 Work / 10 Break</button>
+        <button class="template-button" data-work="75" data-break="30">75 Work / 30 Break</button>
+      </div>
+
+      <!-- Settings Section Toggle -->
+      <div id="settings-toggle" class="controls">
+        <button id="show-settings">Settings</button>
+      </div>
+
+      <!-- Settings Section -->
+      <div id="settings-section" class="settings hidden">
+        <!-- Custom Time Settings -->
+        <h2>Custom Timer Settings</h2>
+        <label>
+          Work Duration (minutes):
+          <input type="number" id="work-duration" value="40" min="1" />
+        </label>
+        <label>
+          Break Duration (minutes):
+          <input type="number" id="break-duration" value="10" min="1" />
+        </label>
+        <button id="save-settings">Save Settings</button>
+
+        <!-- Custom Audio Settings -->
+        <h2>Audio Alerts</h2>
+        <label>
+          Upload Custom Alert Sound:
+          <input type="file" id="custom-audio" accept="audio/*" />
+        </label>
+        <audio id="audio-preview" controls></audio>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

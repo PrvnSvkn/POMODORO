@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Notification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 20px;
+        color: #333;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="message"></h1>
+    <button onclick="closeWindow()">OK</button>
+    <script>
+      // Extract the message from the query string
+      const params = new URLSearchParams(window.location.search);
+      const message = params.get("message");
+      document.getElementById("message").textContent = message;
+
+      function closeWindow() {
+        window.close();
+      }
+    </script>
+  </body>
+</html>

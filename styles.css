@@ -1,0 +1,124 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Optional: Add a subtle background color for contrast */
+  }
+  
+  /* Timer Container */
+  .timer-container {
+    width: 300px;
+    height: auto;
+    background-color: rgb(98, 121, 74); /* Work timer color */
+    border-radius: 15px; /* Smooth rectangular shape */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    padding: 20px; /* Adds internal spacing */
+    box-sizing: border-box; /* Ensures padding is part of the width/height */
+    margin: 20px auto; /* Centers the container */
+  }
+  
+  /* Timer Display */
+  .timer {
+    font-size: 90px; /* 2.5x bigger than the original 36px */
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Controls Section */
+  .controls {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Vertically align the buttons */
+    gap: 20px; /* Adds equal spacing between buttons */
+    margin-bottom: 20px; /* Add spacing below the controls section */
+  }
+  
+  .controls button {
+    min-width: 120px; /* Ensures uniform button width */
+    padding: 15px 30px; /* Increased padding for larger buttons */
+    font-size: 16px; /* Slightly larger font size */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Dark background for buttons */
+    cursor: pointer;
+    text-align: center; /* Centers text inside the button */
+  }
+  
+  .controls button:hover {
+    background-color: #555;
+  }
+  
+  /* Settings Section */
+  .settings {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center settings section */
+    align-items: center; /* Align items to center */
+    gap: 15px; /* Adds equal spacing between fields */
+    margin-top: 20px; /* Adds spacing between settings and other elements */
+  }
+  
+  .settings label {
+    font-size: 14px;
+    color: white;
+    text-align: center; /* Centers text inside the label */
+  }
+  
+  input[type="number"] {
+    width: 100px; /* Ensures consistent input width */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Centers the input value */
+  }
+  
+  /* Settings Buttons */
+  .settings button {
+    min-width: 120px; /* Ensures consistent button width in settings */
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    cursor: pointer;
+    text-align: center; /* Centers text inside the button */
+  }
+  
+  .settings button:hover {
+    background-color: #555;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Custom Font */
+  @font-face {
+    font-family: "MyFont";
+    src: url("fonts/Nighty.ttf") format("truetype");
+    font-weight: normal;
+  }
+  
+  /* Apply Custom Font */
+  body {
+    font-family: "MyFont", Arial, sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: "MyFont";
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  button {
+    font-family: "MyFont", Arial, sans-serif;
+  }
